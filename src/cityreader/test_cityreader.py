@@ -2,6 +2,8 @@ import unittest
 from cityreader import City, cityreader
 
 def check_city(inp, exp):
+
+    print(f"input: {inp.name}, expected: {exp.name}")
     if inp.name != exp.name:
       return False
     if inp.lat != exp.lat:
